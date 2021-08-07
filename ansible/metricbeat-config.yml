@@ -1,0 +1,868 @@
+Last login: Fri Aug  6 17:37:12 on ttys000
+nathalievidal@MacBook-Pro ~ % ls -la
+total 368
+drwxr-xr-x+  44 nathalievidal  staff   1408 Aug  7 10:05 .
+drwxr-xr-x    6 root           admin    192 Jan  1  2020 ..
+-r--------    1 nathalievidal  staff      7 Oct 26  2017 .CFUserTextEncoding
+-rw-r--r--@   1 nathalievidal  staff  18436 Aug  6 18:37 .DS_Store
+drwx------    2 nathalievidal  staff     64 Aug  6 16:45 .Trash
+drwxr-xr-x   10 nathalievidal  staff    320 Feb  1  2021 .anydesk
+-rw-------    1 nathalievidal  staff  65171 Jul  1 12:10 .bash_history
+-rw-r--r--    1 nathalievidal  staff    168 Jun 28 15:08 .bash_profile
+drwx------   66 nathalievidal  staff   2112 Jul  1 12:10 .bash_sessions
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 21 19:49 .config
+drwx------    3 nathalievidal  staff     96 Jun 16  2013 .cups
+drwxr-xr-x    4 nathalievidal  staff    128 Jul 23 12:08 .docker
+-rw-r--r--    1 nathalievidal  staff    202 Aug  6 11:31 .gitconfig
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 28 15:09 .idlerc
+-rw-------    1 nathalievidal  staff     28 May  7 12:28 .lesshst
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 30 18:17 .local
+drwx------    5 nathalievidal  staff    160 Jul 21 21:09 .ssh
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 26 16:59 .thinkorswim
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 28 18:08 .vagrant
+drwxr-xr-x    9 nathalievidal  staff    288 Jun 15 11:19 .vagrant.d
+-rw-------    1 nathalievidal  staff   1730 May 31 21:52 .viminfo
+-rw-r--r--    1 nathalievidal  staff    164 Jul 26 17:44 .zprofile
+-rw-------    1 nathalievidal  staff   7839 Aug  7 10:03 .zsh_history
+drwx------   26 nathalievidal  staff    832 Aug  7 10:05 .zsh_sessions
+drwxr-xr-x    2 nathalievidal  staff     64 Nov 11  2013 Applications
+drwx------@  13 nathalievidal  staff    416 Aug  6 21:29 Desktop
+drwx------@  27 nathalievidal  staff    864 Jun 30 18:20 Documents
+drwx------@ 591 nathalievidal  staff  18912 Aug  6 11:32 Downloads
+drwx------@  88 nathalievidal  staff   2816 May 19 17:53 Library
+drwx------+  11 nathalievidal  staff    352 Feb  1  2021 Movies
+drwx------+   6 nathalievidal  staff    192 Nov 19  2019 Music
+drwx------+  18 nathalievidal  staff    576 Apr 19 14:26 Pictures
+drwxr-xr-x+   4 nathalievidal  staff    128 Jun 12  2013 Public
+drwxr-xr-x    3 nathalievidal  staff     96 Jul 26 17:56 PycharmProjects
+drwxr-xr-x+   3 nathalievidal  staff     96 Apr 16 16:02 Sites
+-rw-r--r--    1 nathalievidal  staff   3010 Apr 28 18:07 Vagrantfile
+drwx------    6 nathalievidal  staff    192 Jul 14 16:47 VirtualBox VMs
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 ansible
+-rw-r--r--    1 nathalievidal  staff  59213 Jun 28 17:30 decode_flag.py
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 diagrams
+-rw-r--r--    1 nathalievidal  staff      0 Jul  7 10:49 key_and_IV
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:26 linux
+-rw-r--r--    1 nathalievidal  staff     25 Jul  7 10:43 plainmessage.txt
+drwxr-xr-x    4 nathalievidal  staff    128 Aug  6 12:01 scripts
+nathalievidal@MacBook-Pro ~ % cd scripts 
+nathalievidal@MacBook-Pro scripts % ls -la
+total 8
+drwxr-xr-x   4 nathalievidal  staff   128 Aug  6 12:01 .
+drwxr-xr-x+ 44 nathalievidal  staff  1408 Aug  7 10:05 ..
+drwxr-xr-x  13 nathalievidal  staff   416 Aug  6 16:17 .git
+-rw-r--r--   1 nathalievidal  staff    56 Aug  6 12:01 README.md
+nathalievidal@MacBook-Pro scripts % cd ../
+nathalievidal@MacBook-Pro ~ % rmdir scripts 
+rmdir: scripts: Directory not empty
+nathalievidal@MacBook-Pro ~ % ls -la
+total 368
+drwxr-xr-x+  44 nathalievidal  staff   1408 Aug  7 10:05 .
+drwxr-xr-x    6 root           admin    192 Jan  1  2020 ..
+-r--------    1 nathalievidal  staff      7 Oct 26  2017 .CFUserTextEncoding
+-rw-r--r--@   1 nathalievidal  staff  18436 Aug  6 18:37 .DS_Store
+drwx------    2 nathalievidal  staff     64 Aug  6 16:45 .Trash
+drwxr-xr-x   10 nathalievidal  staff    320 Feb  1  2021 .anydesk
+-rw-------    1 nathalievidal  staff  65171 Jul  1 12:10 .bash_history
+-rw-r--r--    1 nathalievidal  staff    168 Jun 28 15:08 .bash_profile
+drwx------   66 nathalievidal  staff   2112 Jul  1 12:10 .bash_sessions
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 21 19:49 .config
+drwx------    3 nathalievidal  staff     96 Jun 16  2013 .cups
+drwxr-xr-x    4 nathalievidal  staff    128 Jul 23 12:08 .docker
+-rw-r--r--    1 nathalievidal  staff    202 Aug  6 11:31 .gitconfig
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 28 15:09 .idlerc
+-rw-------    1 nathalievidal  staff     28 May  7 12:28 .lesshst
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 30 18:17 .local
+drwx------    5 nathalievidal  staff    160 Jul 21 21:09 .ssh
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 26 16:59 .thinkorswim
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 28 18:08 .vagrant
+drwxr-xr-x    9 nathalievidal  staff    288 Jun 15 11:19 .vagrant.d
+-rw-------    1 nathalievidal  staff   1730 May 31 21:52 .viminfo
+-rw-r--r--    1 nathalievidal  staff    164 Jul 26 17:44 .zprofile
+-rw-------    1 nathalievidal  staff   7839 Aug  7 10:03 .zsh_history
+drwx------   26 nathalievidal  staff    832 Aug  7 10:05 .zsh_sessions
+drwxr-xr-x    2 nathalievidal  staff     64 Nov 11  2013 Applications
+drwx------@  13 nathalievidal  staff    416 Aug  6 21:29 Desktop
+drwx------@  27 nathalievidal  staff    864 Jun 30 18:20 Documents
+drwx------@ 591 nathalievidal  staff  18912 Aug  6 11:32 Downloads
+drwx------@  88 nathalievidal  staff   2816 May 19 17:53 Library
+drwx------+  11 nathalievidal  staff    352 Feb  1  2021 Movies
+drwx------+   6 nathalievidal  staff    192 Nov 19  2019 Music
+drwx------+  18 nathalievidal  staff    576 Apr 19 14:26 Pictures
+drwxr-xr-x+   4 nathalievidal  staff    128 Jun 12  2013 Public
+drwxr-xr-x    3 nathalievidal  staff     96 Jul 26 17:56 PycharmProjects
+drwxr-xr-x+   3 nathalievidal  staff     96 Apr 16 16:02 Sites
+-rw-r--r--    1 nathalievidal  staff   3010 Apr 28 18:07 Vagrantfile
+drwx------    6 nathalievidal  staff    192 Jul 14 16:47 VirtualBox VMs
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 ansible
+-rw-r--r--    1 nathalievidal  staff  59213 Jun 28 17:30 decode_flag.py
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 diagrams
+-rw-r--r--    1 nathalievidal  staff      0 Jul  7 10:49 key_and_IV
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:26 linux
+-rw-r--r--    1 nathalievidal  staff     25 Jul  7 10:43 plainmessage.txt
+drwxr-xr-x    4 nathalievidal  staff    128 Aug  6 12:01 scripts
+nathalievidal@MacBook-Pro ~ % ssh -i ~/.ssh/id_rsa RedAdmin@20.102.61.241
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.4.0-1055-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Aug  7 14:11:01 UTC 2021
+
+  System load:  0.01              Processes:              110
+  Usage of /:   9.6% of 28.90GB   Users logged in:        0
+  Memory usage: 33%               IP address for eth0:    10.0.0.5
+  Swap usage:   0%                IP address for docker0: 172.17.0.1
+
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+
+3 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+Last login: Wed Aug  4 23:09:30 2021 from 108.56.133.74
+RedAdmin@JumpBoxProvisioner:~$ exit
+logout
+Connection to 20.102.61.241 closed.
+nathalievidal@MacBook-Pro ~ % git clone https://github.com/Moss2021/scripts.git
+fatal: destination path 'scripts' already exists and is not an empty directory.
+nathalievidal@MacBook-Pro ~ % ls -la
+total 368
+drwxr-xr-x+  44 nathalievidal  staff   1408 Aug  7 10:05 .
+drwxr-xr-x    6 root           admin    192 Jan  1  2020 ..
+-r--------    1 nathalievidal  staff      7 Oct 26  2017 .CFUserTextEncoding
+-rw-r--r--@   1 nathalievidal  staff  18436 Aug  6 18:37 .DS_Store
+drwx------    2 nathalievidal  staff     64 Aug  6 16:45 .Trash
+drwxr-xr-x   10 nathalievidal  staff    320 Feb  1  2021 .anydesk
+-rw-------    1 nathalievidal  staff  65171 Jul  1 12:10 .bash_history
+-rw-r--r--    1 nathalievidal  staff    168 Jun 28 15:08 .bash_profile
+drwx------   66 nathalievidal  staff   2112 Jul  1 12:10 .bash_sessions
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 21 19:49 .config
+drwx------    3 nathalievidal  staff     96 Jun 16  2013 .cups
+drwxr-xr-x    4 nathalievidal  staff    128 Jul 23 12:08 .docker
+-rw-r--r--    1 nathalievidal  staff    202 Aug  6 11:31 .gitconfig
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 28 15:09 .idlerc
+-rw-------    1 nathalievidal  staff     28 May  7 12:28 .lesshst
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 30 18:17 .local
+drwx------    5 nathalievidal  staff    160 Jul 21 21:09 .ssh
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 26 16:59 .thinkorswim
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 28 18:08 .vagrant
+drwxr-xr-x    9 nathalievidal  staff    288 Jun 15 11:19 .vagrant.d
+-rw-------    1 nathalievidal  staff   1730 May 31 21:52 .viminfo
+-rw-r--r--    1 nathalievidal  staff    164 Jul 26 17:44 .zprofile
+-rw-------    1 nathalievidal  staff   7839 Aug  7 10:03 .zsh_history
+drwx------   26 nathalievidal  staff    832 Aug  7 10:05 .zsh_sessions
+drwxr-xr-x    2 nathalievidal  staff     64 Nov 11  2013 Applications
+drwx------@  13 nathalievidal  staff    416 Aug  6 21:29 Desktop
+drwx------@  27 nathalievidal  staff    864 Jun 30 18:20 Documents
+drwx------@ 591 nathalievidal  staff  18912 Aug  6 11:32 Downloads
+drwx------@  88 nathalievidal  staff   2816 May 19 17:53 Library
+drwx------+  11 nathalievidal  staff    352 Feb  1  2021 Movies
+drwx------+   6 nathalievidal  staff    192 Nov 19  2019 Music
+drwx------+  18 nathalievidal  staff    576 Apr 19 14:26 Pictures
+drwxr-xr-x+   4 nathalievidal  staff    128 Jun 12  2013 Public
+drwxr-xr-x    3 nathalievidal  staff     96 Jul 26 17:56 PycharmProjects
+drwxr-xr-x+   3 nathalievidal  staff     96 Apr 16 16:02 Sites
+-rw-r--r--    1 nathalievidal  staff   3010 Apr 28 18:07 Vagrantfile
+drwx------    6 nathalievidal  staff    192 Jul 14 16:47 VirtualBox VMs
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 ansible
+-rw-r--r--    1 nathalievidal  staff  59213 Jun 28 17:30 decode_flag.py
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 diagrams
+-rw-r--r--    1 nathalievidal  staff      0 Jul  7 10:49 key_and_IV
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:26 linux
+-rw-r--r--    1 nathalievidal  staff     25 Jul  7 10:43 plainmessage.txt
+drwxr-xr-x    4 nathalievidal  staff    128 Aug  6 12:01 scripts
+nathalievidal@MacBook-Pro ~ % rmdik scripts 
+zsh: command not found: rmdik
+nathalievidal@MacBook-Pro ~ % rm scripts 
+rm: scripts: is a directory
+nathalievidal@MacBook-Pro ~ % rmdir scripts 
+rmdir: scripts: Directory not empty
+nathalievidal@MacBook-Pro ~ % rmdir -rf scripts
+rmdir: illegal option -- r
+usage: rmdir [-p] directory ...
+nathalievidal@MacBook-Pro ~ % rmdir -p scripts 
+rmdir: scripts: Directory not empty
+nathalievidal@MacBook-Pro ~ % rmdir -f scripts
+rmdir: illegal option -- f
+usage: rmdir [-p] directory ...
+nathalievidal@MacBook-Pro ~ % sudo rmdir -f scripts
+Password:
+rmdir: illegal option -- f
+usage: rmdir [-p] directory ...
+nathalievidal@MacBook-Pro ~ % cd scripts 
+nathalievidal@MacBook-Pro scripts % ls -la
+total 8
+drwxr-xr-x   4 nathalievidal  staff   128 Aug  6 12:01 .
+drwxr-xr-x+ 44 nathalievidal  staff  1408 Aug  7 10:05 ..
+drwxr-xr-x  13 nathalievidal  staff   416 Aug  6 16:17 .git
+-rw-r--r--   1 nathalievidal  staff    56 Aug  6 12:01 README.md
+nathalievidal@MacBook-Pro scripts % rm .
+rm: "." and ".." may not be removed
+nathalievidal@MacBook-Pro scripts % cd ../
+nathalievidal@MacBook-Pro ~ % rm -rf scripts    
+nathalievidal@MacBook-Pro ~ % ls -la
+total 368
+drwxr-xr-x+  43 nathalievidal  staff   1376 Aug  7 10:22 .
+drwxr-xr-x    6 root           admin    192 Jan  1  2020 ..
+-r--------    1 nathalievidal  staff      7 Oct 26  2017 .CFUserTextEncoding
+-rw-r--r--@   1 nathalievidal  staff  18436 Aug  6 18:37 .DS_Store
+drwx------    2 nathalievidal  staff     64 Aug  6 16:45 .Trash
+drwxr-xr-x   10 nathalievidal  staff    320 Feb  1  2021 .anydesk
+-rw-------    1 nathalievidal  staff  65171 Jul  1 12:10 .bash_history
+-rw-r--r--    1 nathalievidal  staff    168 Jun 28 15:08 .bash_profile
+drwx------   66 nathalievidal  staff   2112 Jul  1 12:10 .bash_sessions
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 21 19:49 .config
+drwx------    3 nathalievidal  staff     96 Jun 16  2013 .cups
+drwxr-xr-x    4 nathalievidal  staff    128 Jul 23 12:08 .docker
+-rw-r--r--    1 nathalievidal  staff    202 Aug  6 11:31 .gitconfig
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 28 15:09 .idlerc
+-rw-------    1 nathalievidal  staff     28 May  7 12:28 .lesshst
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 30 18:17 .local
+drwx------    5 nathalievidal  staff    160 Jul 21 21:09 .ssh
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 26 16:59 .thinkorswim
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 28 18:08 .vagrant
+drwxr-xr-x    9 nathalievidal  staff    288 Jun 15 11:19 .vagrant.d
+-rw-------    1 nathalievidal  staff   1730 May 31 21:52 .viminfo
+-rw-r--r--    1 nathalievidal  staff    164 Jul 26 17:44 .zprofile
+-rw-------    1 nathalievidal  staff   7839 Aug  7 10:03 .zsh_history
+drwx------   26 nathalievidal  staff    832 Aug  7 10:05 .zsh_sessions
+drwxr-xr-x    2 nathalievidal  staff     64 Nov 11  2013 Applications
+drwx------@  13 nathalievidal  staff    416 Aug  6 21:29 Desktop
+drwx------@  27 nathalievidal  staff    864 Jun 30 18:20 Documents
+drwx------@ 591 nathalievidal  staff  18912 Aug  6 11:32 Downloads
+drwx------@  88 nathalievidal  staff   2816 May 19 17:53 Library
+drwx------+  11 nathalievidal  staff    352 Feb  1  2021 Movies
+drwx------+   6 nathalievidal  staff    192 Nov 19  2019 Music
+drwx------+  18 nathalievidal  staff    576 Apr 19 14:26 Pictures
+drwxr-xr-x+   4 nathalievidal  staff    128 Jun 12  2013 Public
+drwxr-xr-x    3 nathalievidal  staff     96 Jul 26 17:56 PycharmProjects
+drwxr-xr-x+   3 nathalievidal  staff     96 Apr 16 16:02 Sites
+-rw-r--r--    1 nathalievidal  staff   3010 Apr 28 18:07 Vagrantfile
+drwx------    6 nathalievidal  staff    192 Jul 14 16:47 VirtualBox VMs
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 ansible
+-rw-r--r--    1 nathalievidal  staff  59213 Jun 28 17:30 decode_flag.py
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 diagrams
+-rw-r--r--    1 nathalievidal  staff      0 Jul  7 10:49 key_and_IV
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:26 linux
+-rw-r--r--    1 nathalievidal  staff     25 Jul  7 10:43 plainmessage.txt
+nathalievidal@MacBook-Pro ~ % cd scripts
+cd: no such file or directory: scripts
+nathalievidal@MacBook-Pro ~ % ls -la
+total 368
+drwxr-xr-x+  43 nathalievidal  staff   1376 Aug  7 10:22 .
+drwxr-xr-x    6 root           admin    192 Jan  1  2020 ..
+-r--------    1 nathalievidal  staff      7 Oct 26  2017 .CFUserTextEncoding
+-rw-r--r--@   1 nathalievidal  staff  18436 Aug  6 18:37 .DS_Store
+drwx------    2 nathalievidal  staff     64 Aug  6 16:45 .Trash
+drwxr-xr-x   10 nathalievidal  staff    320 Feb  1  2021 .anydesk
+-rw-------    1 nathalievidal  staff  65171 Jul  1 12:10 .bash_history
+-rw-r--r--    1 nathalievidal  staff    168 Jun 28 15:08 .bash_profile
+drwx------   66 nathalievidal  staff   2112 Jul  1 12:10 .bash_sessions
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 21 19:49 .config
+drwx------    3 nathalievidal  staff     96 Jun 16  2013 .cups
+drwxr-xr-x    4 nathalievidal  staff    128 Jul 23 12:08 .docker
+-rw-r--r--    1 nathalievidal  staff    202 Aug  6 11:31 .gitconfig
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 28 15:09 .idlerc
+-rw-------    1 nathalievidal  staff     28 May  7 12:28 .lesshst
+drwxr-xr-x    3 nathalievidal  staff     96 Jun 30 18:17 .local
+drwx------    5 nathalievidal  staff    160 Jul 21 21:09 .ssh
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 26 16:59 .thinkorswim
+drwxr-xr-x    4 nathalievidal  staff    128 Apr 28 18:08 .vagrant
+drwxr-xr-x    9 nathalievidal  staff    288 Jun 15 11:19 .vagrant.d
+-rw-------    1 nathalievidal  staff   1730 May 31 21:52 .viminfo
+-rw-r--r--    1 nathalievidal  staff    164 Jul 26 17:44 .zprofile
+-rw-------    1 nathalievidal  staff   7839 Aug  7 10:03 .zsh_history
+drwx------   26 nathalievidal  staff    832 Aug  7 10:05 .zsh_sessions
+drwxr-xr-x    2 nathalievidal  staff     64 Nov 11  2013 Applications
+drwx------@  13 nathalievidal  staff    416 Aug  6 21:29 Desktop
+drwx------@  27 nathalievidal  staff    864 Jun 30 18:20 Documents
+drwx------@ 591 nathalievidal  staff  18912 Aug  6 11:32 Downloads
+drwx------@  88 nathalievidal  staff   2816 May 19 17:53 Library
+drwx------+  11 nathalievidal  staff    352 Feb  1  2021 Movies
+drwx------+   6 nathalievidal  staff    192 Nov 19  2019 Music
+drwx------+  18 nathalievidal  staff    576 Apr 19 14:26 Pictures
+drwxr-xr-x+   4 nathalievidal  staff    128 Jun 12  2013 Public
+drwxr-xr-x    3 nathalievidal  staff     96 Jul 26 17:56 PycharmProjects
+drwxr-xr-x+   3 nathalievidal  staff     96 Apr 16 16:02 Sites
+-rw-r--r--    1 nathalievidal  staff   3010 Apr 28 18:07 Vagrantfile
+drwx------    6 nathalievidal  staff    192 Jul 14 16:47 VirtualBox VMs
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 ansible
+-rw-r--r--    1 nathalievidal  staff  59213 Jun 28 17:30 decode_flag.py
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:27 diagrams
+-rw-r--r--    1 nathalievidal  staff      0 Jul  7 10:49 key_and_IV
+drwxr-xr-x    3 nathalievidal  staff     96 Aug  6 13:26 linux
+-rw-r--r--    1 nathalievidal  staff     25 Jul  7 10:43 plainmessage.txt
+nathalievidal@MacBook-Pro ~ % clear
+
+nathalievidal@MacBook-Pro ~ % git clone https://github.com/Moss2021/scripts.git
+Cloning into 'scripts'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+nathalievidal@MacBook-Pro ~ % ls
+Applications		Movies			Sites			diagrams
+Desktop			Music			Vagrantfile		key_and_IV
+Documents		Pictures		VirtualBox VMs		linux
+Downloads		Public			ansible			plainmessage.txt
+Library			PycharmProjects		decode_flag.py		scripts
+nathalievidal@MacBook-Pro ~ % cd scripts 
+nathalievidal@MacBook-Pro scripts % ls la
+ls: la: No such file or directory
+nathalievidal@MacBook-Pro scripts % ls -la
+total 8
+drwxr-xr-x   4 nathalievidal  staff   128 Aug  7 10:43 .
+drwxr-xr-x+ 44 nathalievidal  staff  1408 Aug  7 10:43 ..
+drwxr-xr-x  12 nathalievidal  staff   384 Aug  7 10:43 .git
+-rw-r--r--   1 nathalievidal  staff    56 Aug  7 10:43 README.md
+nathalievidal@MacBook-Pro scripts % ls  
+README.md
+nathalievidal@MacBook-Pro scripts % mkdir linux
+nathalievidal@MacBook-Pro scripts % mkdir ansible
+nathalievidal@MacBook-Pro scripts % mkdir diagrams
+nathalievidal@MacBook-Pro scripts % ls
+README.md	ansible		diagrams	linux
+nathalievidal@MacBook-Pro scripts % cd ../
+nathalievidal@MacBook-Pro ~ % ls 
+Applications		Movies			Sites			diagrams
+Desktop			Music			Vagrantfile		key_and_IV
+Documents		Pictures		VirtualBox VMs		linux
+Downloads		Public			ansible			plainmessage.txt
+Library			PycharmProjects		decode_flag.py		scripts
+nathalievidal@MacBook-Pro ~ % mv scripts /Desktop
+mv: /Desktop: Read-only file system
+mv: scripts: unable to copy extended attributes to /Desktop: Read-only file system
+mv: /Desktop/diagrams: No such file or directory
+mv: scripts/diagrams: unable to copy extended attributes to /Desktop/diagrams: No such file or directory
+mv: setattrlist: /Desktop/diagrams: No such file or directory
+mv: chown: /Desktop/diagrams: No such file or directory
+mv: chmod: /Desktop/diagrams: No such file or directory
+mv: chflags: /Desktop/diagrams: No such file or directory
+mv: scripts/diagrams: unable to copy ACL to /Desktop/diagrams: No such file or directory
+mv: /Desktop/README.md: No such file or directory
+mv: /Desktop/ansible: No such file or directory
+mv: scripts/ansible: unable to copy extended attributes to /Desktop/ansible: No such file or directory
+mv: setattrlist: /Desktop/ansible: No such file or directory
+mv: chown: /Desktop/ansible: No such file or directory
+mv: chmod: /Desktop/ansible: No such file or directory
+mv: chflags: /Desktop/ansible: No such file or directory
+mv: scripts/ansible: unable to copy ACL to /Desktop/ansible: No such file or directory
+mv: /Desktop/linux: No such file or directory
+mv: scripts/linux: unable to copy extended attributes to /Desktop/linux: No such file or directory
+mv: setattrlist: /Desktop/linux: No such file or directory
+mv: chown: /Desktop/linux: No such file or directory
+mv: chmod: /Desktop/linux: No such file or directory
+mv: chflags: /Desktop/linux: No such file or directory
+mv: scripts/linux: unable to copy ACL to /Desktop/linux: No such file or directory
+mv: /Desktop/.git: No such file or directory
+mv: scripts/.git: unable to copy extended attributes to /Desktop/.git: No such file or directory
+mv: /Desktop/.git/config: No such file or directory
+mv: /Desktop/.git/objects: No such file or directory
+mv: scripts/.git/objects: unable to copy extended attributes to /Desktop/.git/objects: No such file or directory
+mv: /Desktop/.git/objects/pack: No such file or directory
+mv: scripts/.git/objects/pack: unable to copy extended attributes to /Desktop/.git/objects/pack: No such file or directory
+mv: /Desktop/.git/objects/pack/pack-25c489287fa68410d6fd02b45df765581b12517a.pack: No such file or directory
+mv: /Desktop/.git/objects/pack/pack-25c489287fa68410d6fd02b45df765581b12517a.idx: No such file or directory
+mv: setattrlist: /Desktop/.git/objects/pack: No such file or directory
+mv: chown: /Desktop/.git/objects/pack: No such file or directory
+mv: chmod: /Desktop/.git/objects/pack: No such file or directory
+mv: chflags: /Desktop/.git/objects/pack: No such file or directory
+mv: scripts/.git/objects/pack: unable to copy ACL to /Desktop/.git/objects/pack: No such file or directory
+mv: /Desktop/.git/objects/info: No such file or directory
+mv: scripts/.git/objects/info: unable to copy extended attributes to /Desktop/.git/objects/info: No such file or directory
+mv: setattrlist: /Desktop/.git/objects/info: No such file or directory
+mv: chown: /Desktop/.git/objects/info: No such file or directory
+mv: chmod: /Desktop/.git/objects/info: No such file or directory
+mv: chflags: /Desktop/.git/objects/info: No such file or directory
+mv: scripts/.git/objects/info: unable to copy ACL to /Desktop/.git/objects/info: No such file or directory
+mv: setattrlist: /Desktop/.git/objects: No such file or directory
+mv: chown: /Desktop/.git/objects: No such file or directory
+mv: chmod: /Desktop/.git/objects: No such file or directory
+mv: chflags: /Desktop/.git/objects: No such file or directory
+mv: scripts/.git/objects: unable to copy ACL to /Desktop/.git/objects: No such file or directory
+mv: /Desktop/.git/HEAD: No such file or directory
+mv: /Desktop/.git/info: No such file or directory
+mv: scripts/.git/info: unable to copy extended attributes to /Desktop/.git/info: No such file or directory
+mv: /Desktop/.git/info/exclude: No such file or directory
+mv: setattrlist: /Desktop/.git/info: No such file or directory
+mv: chown: /Desktop/.git/info: No such file or directory
+mv: chmod: /Desktop/.git/info: No such file or directory
+mv: chflags: /Desktop/.git/info: No such file or directory
+mv: scripts/.git/info: unable to copy ACL to /Desktop/.git/info: No such file or directory
+mv: /Desktop/.git/logs: No such file or directory
+mv: scripts/.git/logs: unable to copy extended attributes to /Desktop/.git/logs: No such file or directory
+mv: /Desktop/.git/logs/HEAD: No such file or directory
+mv: /Desktop/.git/logs/refs: No such file or directory
+mv: scripts/.git/logs/refs: unable to copy extended attributes to /Desktop/.git/logs/refs: No such file or directory
+mv: /Desktop/.git/logs/refs/heads: No such file or directory
+mv: scripts/.git/logs/refs/heads: unable to copy extended attributes to /Desktop/.git/logs/refs/heads: No such file or directory
+mv: /Desktop/.git/logs/refs/heads/main: No such file or directory
+mv: setattrlist: /Desktop/.git/logs/refs/heads: No such file or directory
+mv: chown: /Desktop/.git/logs/refs/heads: No such file or directory
+mv: chmod: /Desktop/.git/logs/refs/heads: No such file or directory
+mv: chflags: /Desktop/.git/logs/refs/heads: No such file or directory
+mv: scripts/.git/logs/refs/heads: unable to copy ACL to /Desktop/.git/logs/refs/heads: No such file or directory
+mv: /Desktop/.git/logs/refs/remotes: No such file or directory
+mv: scripts/.git/logs/refs/remotes: unable to copy extended attributes to /Desktop/.git/logs/refs/remotes: No such file or directory
+mv: /Desktop/.git/logs/refs/remotes/origin: No such file or directory
+mv: scripts/.git/logs/refs/remotes/origin: unable to copy extended attributes to /Desktop/.git/logs/refs/remotes/origin: No such file or directory
+mv: /Desktop/.git/logs/refs/remotes/origin/HEAD: No such file or directory
+mv: setattrlist: /Desktop/.git/logs/refs/remotes/origin: No such file or directory
+mv: chown: /Desktop/.git/logs/refs/remotes/origin: No such file or directory
+mv: chmod: /Desktop/.git/logs/refs/remotes/origin: No such file or directory
+mv: chflags: /Desktop/.git/logs/refs/remotes/origin: No such file or directory
+mv: scripts/.git/logs/refs/remotes/origin: unable to copy ACL to /Desktop/.git/logs/refs/remotes/origin: No such file or directory
+mv: setattrlist: /Desktop/.git/logs/refs/remotes: No such file or directory
+mv: chown: /Desktop/.git/logs/refs/remotes: No such file or directory
+mv: chmod: /Desktop/.git/logs/refs/remotes: No such file or directory
+mv: chflags: /Desktop/.git/logs/refs/remotes: No such file or directory
+mv: scripts/.git/logs/refs/remotes: unable to copy ACL to /Desktop/.git/logs/refs/remotes: No such file or directory
+mv: setattrlist: /Desktop/.git/logs/refs: No such file or directory
+mv: chown: /Desktop/.git/logs/refs: No such file or directory
+mv: chmod: /Desktop/.git/logs/refs: No such file or directory
+mv: chflags: /Desktop/.git/logs/refs: No such file or directory
+mv: scripts/.git/logs/refs: unable to copy ACL to /Desktop/.git/logs/refs: No such file or directory
+mv: setattrlist: /Desktop/.git/logs: No such file or directory
+mv: chown: /Desktop/.git/logs: No such file or directory
+mv: chmod: /Desktop/.git/logs: No such file or directory
+mv: chflags: /Desktop/.git/logs: No such file or directory
+mv: scripts/.git/logs: unable to copy ACL to /Desktop/.git/logs: No such file or directory
+mv: /Desktop/.git/description: No such file or directory
+mv: /Desktop/.git/hooks: No such file or directory
+mv: scripts/.git/hooks: unable to copy extended attributes to /Desktop/.git/hooks: No such file or directory
+mv: /Desktop/.git/hooks/commit-msg.sample: No such file or directory
+mv: /Desktop/.git/hooks/pre-rebase.sample: No such file or directory
+mv: /Desktop/.git/hooks/pre-commit.sample: No such file or directory
+mv: /Desktop/.git/hooks/applypatch-msg.sample: No such file or directory
+mv: /Desktop/.git/hooks/fsmonitor-watchman.sample: No such file or directory
+mv: /Desktop/.git/hooks/pre-receive.sample: No such file or directory
+mv: /Desktop/.git/hooks/prepare-commit-msg.sample: No such file or directory
+mv: /Desktop/.git/hooks/post-update.sample: No such file or directory
+mv: /Desktop/.git/hooks/pre-merge-commit.sample: No such file or directory
+mv: /Desktop/.git/hooks/pre-applypatch.sample: No such file or directory
+mv: /Desktop/.git/hooks/pre-push.sample: No such file or directory
+mv: /Desktop/.git/hooks/update.sample: No such file or directory
+mv: /Desktop/.git/hooks/push-to-checkout.sample: No such file or directory
+mv: setattrlist: /Desktop/.git/hooks: No such file or directory
+mv: chown: /Desktop/.git/hooks: No such file or directory
+mv: chmod: /Desktop/.git/hooks: No such file or directory
+mv: chflags: /Desktop/.git/hooks: No such file or directory
+mv: scripts/.git/hooks: unable to copy ACL to /Desktop/.git/hooks: No such file or directory
+mv: /Desktop/.git/refs: No such file or directory
+mv: scripts/.git/refs: unable to copy extended attributes to /Desktop/.git/refs: No such file or directory
+mv: /Desktop/.git/refs/heads: No such file or directory
+mv: scripts/.git/refs/heads: unable to copy extended attributes to /Desktop/.git/refs/heads: No such file or directory
+mv: /Desktop/.git/refs/heads/main: No such file or directory
+mv: setattrlist: /Desktop/.git/refs/heads: No such file or directory
+mv: chown: /Desktop/.git/refs/heads: No such file or directory
+mv: chmod: /Desktop/.git/refs/heads: No such file or directory
+mv: chflags: /Desktop/.git/refs/heads: No such file or directory
+mv: scripts/.git/refs/heads: unable to copy ACL to /Desktop/.git/refs/heads: No such file or directory
+mv: /Desktop/.git/refs/tags: No such file or directory
+mv: scripts/.git/refs/tags: unable to copy extended attributes to /Desktop/.git/refs/tags: No such file or directory
+mv: setattrlist: /Desktop/.git/refs/tags: No such file or directory
+mv: chown: /Desktop/.git/refs/tags: No such file or directory
+mv: chmod: /Desktop/.git/refs/tags: No such file or directory
+mv: chflags: /Desktop/.git/refs/tags: No such file or directory
+mv: scripts/.git/refs/tags: unable to copy ACL to /Desktop/.git/refs/tags: No such file or directory
+mv: /Desktop/.git/refs/remotes: No such file or directory
+mv: scripts/.git/refs/remotes: unable to copy extended attributes to /Desktop/.git/refs/remotes: No such file or directory
+mv: /Desktop/.git/refs/remotes/origin: No such file or directory
+mv: scripts/.git/refs/remotes/origin: unable to copy extended attributes to /Desktop/.git/refs/remotes/origin: No such file or directory
+mv: /Desktop/.git/refs/remotes/origin/HEAD: No such file or directory
+mv: setattrlist: /Desktop/.git/refs/remotes/origin: No such file or directory
+mv: chown: /Desktop/.git/refs/remotes/origin: No such file or directory
+mv: chmod: /Desktop/.git/refs/remotes/origin: No such file or directory
+mv: chflags: /Desktop/.git/refs/remotes/origin: No such file or directory
+mv: scripts/.git/refs/remotes/origin: unable to copy ACL to /Desktop/.git/refs/remotes/origin: No such file or directory
+mv: setattrlist: /Desktop/.git/refs/remotes: No such file or directory
+mv: chown: /Desktop/.git/refs/remotes: No such file or directory
+mv: chmod: /Desktop/.git/refs/remotes: No such file or directory
+mv: chflags: /Desktop/.git/refs/remotes: No such file or directory
+mv: scripts/.git/refs/remotes: unable to copy ACL to /Desktop/.git/refs/remotes: No such file or directory
+mv: setattrlist: /Desktop/.git/refs: No such file or directory
+mv: chown: /Desktop/.git/refs: No such file or directory
+mv: chmod: /Desktop/.git/refs: No such file or directory
+mv: chflags: /Desktop/.git/refs: No such file or directory
+mv: scripts/.git/refs: unable to copy ACL to /Desktop/.git/refs: No such file or directory
+mv: /Desktop/.git/index: No such file or directory
+mv: /Desktop/.git/packed-refs: No such file or directory
+mv: setattrlist: /Desktop/.git: No such file or directory
+mv: chown: /Desktop/.git: No such file or directory
+mv: chmod: /Desktop/.git: No such file or directory
+mv: chflags: /Desktop/.git: No such file or directory
+mv: scripts/.git: unable to copy ACL to /Desktop/.git: No such file or directory
+mv: setattrlist: /Desktop: No such file or directory
+mv: chown: /Desktop: No such file or directory
+mv: chmod: /Desktop: No such file or directory
+mv: chflags: /Desktop: No such file or directory
+mv: scripts: unable to copy ACL to /Desktop: Read-only file system
+mv: /bin/cp: terminated with 1 (non-zero) status
+nathalievidal@MacBook-Pro ~ % ls
+Applications		Movies			Sites			diagrams
+Desktop			Music			Vagrantfile		key_and_IV
+Documents		Pictures		VirtualBox VMs		linux
+Downloads		Public			ansible			plainmessage.txt
+Library			PycharmProjects		decode_flag.py		scripts
+nathalievidal@MacBook-Pro ~ % pwd
+/Users/nathalievidal
+nathalievidal@MacBook-Pro ~ % cp /Users/nathalievidal/scripts /Users/nathalievidal/Desktop
+cp: /Users/nathalievidal/scripts is a directory (not copied).
+nathalievidal@MacBook-Pro ~ % cp -R /Users/nathalievidal/scripts /Users/nathalievidal/Desktop
+nathalievidal@MacBook-Pro ~ % ls
+Applications		Movies			Sites			diagrams
+Desktop			Music			Vagrantfile		key_and_IV
+Documents		Pictures		VirtualBox VMs		linux
+Downloads		Public			ansible			plainmessage.txt
+Library			PycharmProjects		decode_flag.py		scripts
+nathalievidal@MacBook-Pro ~ % cd Desktop 
+nathalievidal@MacBook-Pro Desktop % ls
+College Transcripts				Resume
+Cybersecurity CLOUD.pages			Screen Shot 2021-08-07 at 11.19.47 AM.png
+Fortune Builders				Screen Shot 2021-08-07 at 12.46.28 PM.png
+GW						Stocks
+Project I					drawlikepeanuts.pdf
+Reston.mp4					scripts
+nathalievidal@MacBook-Pro Desktop % cd ../
+nathalievidal@MacBook-Pro ~ % ls
+Applications		Movies			Sites			diagrams
+Desktop			Music			Vagrantfile		key_and_IV
+Documents		Pictures		VirtualBox VMs		linux
+Downloads		Public			ansible			plainmessage.txt
+Library			PycharmProjects		decode_flag.py		scripts
+nathalievidal@MacBook-Pro ~ % rmdir scripts 
+rmdir: scripts: Directory not empty
+nathalievidal@MacBook-Pro ~ % rm -f scripts 
+rm: scripts: is a directory
+nathalievidal@MacBook-Pro ~ % rmdir -f scripts 
+rmdir: illegal option -- f
+usage: rmdir [-p] directory ...
+nathalievidal@MacBook-Pro ~ % rm -f scripts 
+rm: scripts: is a directory
+nathalievidal@MacBook-Pro ~ % rmdir -f scripts 
+rmdir: illegal option -- f
+usage: rmdir [-p] directory ...
+nathalievidal@MacBook-Pro ~ % rmdir -p scripts
+rmdir: scripts: Directory not empty
+nathalievidal@MacBook-Pro ~ % rmdir -rf scripts
+rmdir: illegal option -- r
+usage: rmdir [-p] directory ...
+nathalievidal@MacBook-Pro ~ % rm -rf scripts 
+nathalievidal@MacBook-Pro ~ % ls
+Applications		Movies			Sites			diagrams
+Desktop			Music			Vagrantfile		key_and_IV
+Documents		Pictures		VirtualBox VMs		linux
+Downloads		Public			ansible			plainmessage.txt
+Library			PycharmProjects		decode_flag.py
+nathalievidal@MacBook-Pro ~ % cd Desktop 
+nathalievidal@MacBook-Pro Desktop % ls
+College Transcripts				Resume
+Cybersecurity CLOUD.pages			Screen Shot 2021-08-07 at 11.19.47 AM.png
+Fortune Builders				Screen Shot 2021-08-07 at 12.46.28 PM.png
+GW						Stocks
+Project I					drawlikepeanuts.pdf
+Reston.mp4					scripts
+nathalievidal@MacBook-Pro Desktop % cd scripts 
+nathalievidal@MacBook-Pro scripts % ls
+README.md	ansible		diagrams	linux
+nathalievidal@MacBook-Pro scripts % git add .
+nathalievidal@MacBook-Pro scripts % git commit -m "First Commit"
+[main 0dc4090] First Commit
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 diagrams/.DS_Store
+ create mode 100644 diagrams/Project I Cloud Diagram.png
+ create mode 100644 diagrams/Running_docker_ps.png
+nathalievidal@MacBook-Pro scripts % git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.17 MiB | 4.02 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Moss2021/scripts.git
+   439c256..0dc4090  main -> main
+nathalievidal@MacBook-Pro scripts % ssh -i ~/.ssh/id_rsa RedAdmin@20.102.61.241
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.4.0-1055-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Aug  7 17:34:28 UTC 2021
+
+  System load:  0.0               Processes:              110
+  Usage of /:   9.6% of 28.90GB   Users logged in:        0
+  Memory usage: 33%               IP address for eth0:    10.0.0.5
+  Swap usage:   0%                IP address for docker0: 172.17.0.1
+
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+
+3 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+New release '20.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sat Aug  7 14:11:02 2021 from 108.56.133.74
+RedAdmin@JumpBoxProvisioner:~$ sudo docker container start flamboyant_brattain
+flamboyant_brattain
+RedAdmin@JumpBoxProvisioner:~$ sudo docker container attach flamboyant_brattain
+root@3ef519613b57:~# ls -la
+total 44
+drwx------ 1 root root 4096 Aug  2 17:59 .
+drwxr-xr-x 1 root root 4096 Jul 24 16:48 ..
+drwxr-xr-x 4 root root 4096 Jul 24 18:52 .ansible
+-rw------- 1 root root 8068 Aug  5 00:07 .bash_history
+-rw-r--r-- 1 root root 3106 Dec  5  2019 .bashrc
+drwxr-xr-x 3 root root 4096 May 27 04:32 .cache
+drwx------ 1 root root 4096 Jul 24 18:35 .local
+-rw-r--r-- 1 root root  161 Dec  5  2019 .profile
+drwx------ 2 root root 4096 Jul 24 18:19 .ssh
+root@3ef519613b57:~# cd .ansible/
+root@3ef519613b57:~/.ansible# ls -la
+total 20
+drwxr-xr-x 4 root root 4096 Jul 24 18:52 .
+drwx------ 1 root root 4096 Aug  2 17:59 ..
+drwx------ 2 root root 4096 Aug  2 22:17 cp
+drwx------ 2 root root 4096 Aug  2 22:16 tmp
+root@3ef519613b57:~/.ansible# cd ../
+root@3ef519613b57:~# exit         
+exit
+RedAdmin@JumpBoxProvisioner:~$ ls -la
+total 44
+drwxr-xr-x 6 RedAdmin RedAdmin 4096 Jul 28 14:52 .
+drwxr-xr-x 3 root     root     4096 Jul 22 01:49 ..
+-rw------- 1 RedAdmin RedAdmin 4675 Aug  7 14:18 .bash_history
+-rw-r--r-- 1 RedAdmin RedAdmin  220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 RedAdmin RedAdmin 3771 Apr  4  2018 .bashrc
+drwx------ 2 RedAdmin RedAdmin 4096 Jul 24 16:24 .cache
+drwx------ 3 RedAdmin RedAdmin 4096 Jul 24 16:23 .gnupg
+drwxrwxr-x 3 RedAdmin RedAdmin 4096 Jul 28 14:52 .local
+-rw-r--r-- 1 RedAdmin RedAdmin  807 Apr  4  2018 .profile
+drwx------ 2 RedAdmin RedAdmin 4096 Jul 28 14:52 .ssh
+-rw-r--r-- 1 RedAdmin RedAdmin    0 Jul 24 16:25 .sudo_as_admin_successful
+RedAdmin@JumpBoxProvisioner:~$ ssh RedAdmin@10.0.0.6
+RedAdmin@10.0.0.6: Permission denied (publickey).
+RedAdmin@JumpBoxProvisioner:~$ sudo docker container start flamboyant_brattain
+flamboyant_brattain
+RedAdmin@JumpBoxProvisioner:~$ sudo docker container attach flamboyant_brattain
+root@3ef519613b57:~# ssh RedAdmin@10.0.0.6
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.4.0-1055-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Aug  7 17:37:44 UTC 2021
+
+  System load:  0.0                Processes:              125
+  Usage of /:   12.0% of 28.90GB   Users logged in:        0
+  Memory usage: 28%                IP address for eth0:    10.0.0.6
+  Swap usage:   0%                 IP address for docker0: 172.17.0.1
+
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+
+3 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+Last login: Mon Aug  2 22:16:25 2021 from 10.0.0.5
+RedAdmin@Web-1:~$ ls -la
+total 54640
+drwxr-xr-x 6 RedAdmin RedAdmin     4096 Aug  2 21:47 .
+drwxr-xr-x 3 root     root         4096 Jul 22 02:09 ..
+drwx------ 3 RedAdmin RedAdmin     4096 Jul 24 18:52 .ansible
+-rw------- 1 RedAdmin RedAdmin      179 Jul 29 01:46 .bash_history
+-rw-r--r-- 1 RedAdmin RedAdmin      220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 RedAdmin RedAdmin     3771 Apr  4  2018 .bashrc
+drwx------ 2 RedAdmin RedAdmin     4096 Jul 24 18:32 .cache
+drwx------ 3 RedAdmin RedAdmin     4096 Jul 24 18:32 .gnupg
+-rw-r--r-- 1 RedAdmin RedAdmin      807 Apr  4  2018 .profile
+drwx------ 2 RedAdmin RedAdmin     4096 Jul 28 16:58 .ssh
+-rw-r--r-- 1 RedAdmin RedAdmin        0 Jul 27 00:00 .sudo_as_admin_successful
+-rw-r--r-- 1 root     root     24247310 Aug  2 20:06 filebeat-7.4.0-amd64.deb
+-rw-r--r-- 1 root     root     31659652 Aug  2 22:15 metricbeat-7.4.0-amd64.deb
+RedAdmin@Web-1:~$ exit
+logout
+Connection to 10.0.0.6 closed.
+root@3ef519613b57:~# ls
+root@3ef519613b57:~# ls -la
+total 44
+drwx------ 1 root root 4096 Aug  2 17:59 .
+drwxr-xr-x 1 root root 4096 Jul 24 16:48 ..
+drwxr-xr-x 4 root root 4096 Jul 24 18:52 .ansible
+-rw------- 1 root root 8107 Aug  7 17:36 .bash_history
+-rw-r--r-- 1 root root 3106 Dec  5  2019 .bashrc
+drwxr-xr-x 3 root root 4096 May 27 04:32 .cache
+drwx------ 1 root root 4096 Jul 24 18:35 .local
+-rw-r--r-- 1 root root  161 Dec  5  2019 .profile
+drwx------ 2 root root 4096 Jul 24 18:19 .ssh
+root@3ef519613b57:~# cd /etc
+root@3ef519613b57:/etc# ls -la
+total 384
+drwxr-xr-x 1 root root    4096 Aug  2 16:46 .
+drwxr-xr-x 1 root root    4096 Jul 24 16:48 ..
+-rw------- 1 root root       0 Apr 16 05:11 .pwd.lock
+-rw-r--r-- 1 root root    3028 Apr 16 05:11 adduser.conf
+drwxr-xr-x 1 root root    4096 May 27 04:31 alternatives
+drwxr-xr-x 1 root root    4096 Aug  5 01:48 ansible
+drwxr-xr-x 1 root root    4096 Apr 16 05:11 apt
+-rw-r--r-- 1 root root    2319 Feb 25  2020 bash.bashrc
+-rw-r--r-- 1 root root     367 Apr 14  2020 bindresvport.blacklist
+drwxr-xr-x 3 root root    4096 May 27 04:31 ca-certificates
+-rw-r--r-- 1 root root    5662 May 27 04:31 ca-certificates.conf
+drwxr-xr-x 2 root root    4096 Apr 16 05:15 cron.d
+drwxr-xr-x 2 root root    4096 Apr 16 05:32 cron.daily
+-rw-r--r-- 1 root root    2969 Aug  3  2019 debconf.conf
+-rw-r--r-- 1 root root      13 Dec  5  2019 debian_version
+drwxr-xr-x 2 root root    4096 Apr 16 05:32 default
+-rw-r--r-- 1 root root     604 Sep 15  2018 deluser.conf
+drwxr-xr-x 1 root root    4096 Apr 16 05:15 dpkg
+-rw-r--r-- 1 root root     685 Feb 14  2020 e2scrub.conf
+-rw-r--r-- 1 root root     106 Apr 16 05:32 environment
+drwxr-xr-x 3 root root    4096 Aug  2 17:16 filebeat
+-rw-r--r-- 1 root root      37 Apr 16 05:11 fstab
+-rw-r--r-- 1 root root    2584 Feb  1  2020 gai.conf
+-rw-r--r-- 1 root root     457 May 27 04:31 group
+-rw-r--r-- 1 root root     446 Apr 16 05:11 group-
+-rw-r----- 1 root shadow   382 May 27 04:31 gshadow
+-rw-r----- 1 root shadow   374 Apr 16 05:11 gshadow-
+drwxr-xr-x 3 root root    4096 May 27 04:31 gss
+-rw-r--r-- 1 root root      92 Dec  5  2019 host.conf
+-rw-r--r-- 1 root root      13 Aug  7 17:37 hostname
+-rw-r--r-- 1 root root     174 Aug  7 17:37 hosts
+drwxr-xr-x 1 root root    4096 Aug  2 16:46 init.d
+-rw-r--r-- 1 root root    1748 Feb 25  2020 inputrc
+-rw-r--r-- 1 root root      26 Jan 27  2021 issue
+-rw-r--r-- 1 root root      19 Jan 27  2021 issue.net
+drwxr-xr-x 3 root root    4096 Apr 16 05:11 kernel
+-rw-r--r-- 1 root root    9856 May 27 04:34 ld.so.cache
+-rw-r--r-- 1 root root      34 Apr 14  2020 ld.so.conf
+drwxr-xr-x 2 root root    4096 Apr 16 05:32 ld.so.conf.d
+drwxr-xr-x 2 root root    4096 May 27 04:31 ldap
+-rw-r--r-- 1 root root     267 Dec  5  2019 legal
+-rw-r--r-- 1 root root     191 Feb 18  2020 libaudit.conf
+-rw-r--r-- 1 root root   10550 Feb  7  2020 login.defs
+drwxr-xr-x 2 root root    4096 Apr 16 05:32 logrotate.d
+-rw-r--r-- 1 root root     104 Jan 27  2021 lsb-release
+-rw-r--r-- 1 root root       0 Apr 16 05:32 machine-id
+-rw-r--r-- 1 root root    2444 May 27 04:31 mailcap
+-rw-r--r-- 1 root root     449 Oct 18  2019 mailcap.order
+-rw-r--r-- 1 root root   24546 Oct 18  2019 mime.types
+-rw-r--r-- 1 root root     808 Feb 14  2020 mke2fs.conf
+lrwxrwxrwx 1 root root      12 Jul 24 16:48 mtab -> /proc/mounts
+-rw-r--r-- 1 root root   10037 Feb  7  2020 nanorc
+-rw-r--r-- 1 root root      91 Dec  5  2019 networks
+-rw-r--r-- 1 root root     494 Apr 14  2020 nsswitch.conf
+drwxr-xr-x 2 root root    4096 Apr 16 05:11 opt
+lrwxrwxrwx 1 root root      21 Jan 27  2021 os-release -> ../usr/lib/os-release
+-rw-r--r-- 1 root root     552 Dec 17  2019 pam.conf
+drwxr-xr-x 2 root root    4096 Apr 16 05:32 pam.d
+-rw-r--r-- 1 root root     926 Apr 16 05:11 passwd
+-rw-r--r-- 1 root root     581 Dec  5  2019 profile
+drwxr-xr-x 2 root root    4096 Apr 16 05:32 profile.d
+drwxr-xr-x 2 root root    4096 May 27 04:31 python3
+drwxr-xr-x 2 root root    4096 May 27 04:31 python3.8
+drwxr-xr-x 2 root root    4096 Jun 21  2019 rc0.d
+drwxr-xr-x 2 root root    4096 Jun 21  2019 rc1.d
+drwxr-xr-x 2 root root    4096 Jun 21  2019 rc2.d
+drwxr-xr-x 2 root root    4096 Jun 21  2019 rc3.d
+drwxr-xr-x 2 root root    4096 Jun 21  2019 rc4.d
+drwxr-xr-x 2 root root    4096 Jun 21  2019 rc5.d
+drwxr-xr-x 2 root root    4096 Jun 21  2019 rc6.d
+drwxr-xr-x 2 root root    4096 Apr 16 05:11 rcS.d
+-rw-r--r-- 1 root root     649 Aug  7 17:37 resolv.conf
+lrwxrwxrwx 1 root root      13 Dec 16  2020 rmt -> /usr/sbin/rmt
+drwxr-xr-x 4 root root    4096 Apr 16 05:32 security
+drwxr-xr-x 2 root root    4096 Apr 16 05:26 selinux
+-rw-r----- 1 root shadow   501 Apr 16 05:11 shadow
+-rw-r--r-- 1 root root     116 Apr 16 05:11 shells
+drwxr-xr-x 2 root root    4096 Apr 16 05:32 skel
+drwxr-xr-x 3 root root    4096 May 27 04:31 ssh
+drwxr-xr-x 4 root root    4096 May 27 04:31 ssl
+-rw-r--r-- 1 root root       0 Apr 16 05:11 subgid
+-rw-r--r-- 1 root root       0 Apr 16 05:11 subuid
+-rw-r--r-- 1 root root    2351 Feb 13  2020 sysctl.conf
+drwxr-xr-x 2 root root    4096 Apr 16 05:32 sysctl.d
+drwxr-xr-x 3 root root    4096 Jun 21  2019 systemd
+drwxr-xr-x 2 root root    4096 Apr 16 05:30 terminfo
+drwxr-xr-x 2 root root    4096 Apr 16 05:32 update-motd.d
+drwxr-xr-x 2 root root    4096 May 27 04:31 vim
+-rw-r--r-- 1 root root     642 Sep 24  2019 xattr.conf
+root@3ef519613b57:/etc# cd ansible/
+root@3ef519613b57:/etc/ansible# ls -la
+total 56
+drwxr-xr-x 1 root root  4096 Aug  5 01:48 .
+drwxr-xr-x 1 root root  4096 Aug  2 16:46 ..
+-rw-r--r-- 1 root root 19988 Jul 24 18:46 ansible.cfg
+drwxr-xr-x 2 root root  4096 Aug  4 23:22 files
+-rw-r--r-- 1 root root  1202 Jul 31 17:41 hosts
+-rw-r--r-- 1 root root   924 Jul 31 18:31 install-elk.yml
+-rw-r--r-- 1 root root   696 Jul 27 01:00 pentest.yml
+drwxr-xr-x 2 root root  4096 Aug  4 23:42 roles
+root@3ef519613b57:/etc/ansible# nano install-elk.yml 
+root@3ef519613b57:/etc/ansible# nano pentest.yml 
+root@3ef519613b57:/etc/ansible# cd files/
+root@3ef519613b57:/etc/ansible/files# ls
+filebeat-config.yml  metricbeat-config.yml
+root@3ef519613b57:/etc/ansible/files# nano filebeat-config.yml 
+root@3ef519613b57:/etc/ansible/files# nano filebeat-config.yml 
+root@3ef519613b57:/etc/ansible/files# nano metricbeat-config.yml 
+
+  GNU nano 4.8                                   metricbeat-config.yml                                             
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~
+
+#================================ Logging =====================================
+
+# Sets log level. The default log level is info.
+# Available log levels are: error, warning, info, debug
+#logging.level: debug
+
+# At debug level, you can selectively enable logging only for some components.
+# To enable all selectors use ["*"]. Examples of other selectors are "beat",
+# "publish", "service".
+#logging.selectors: ["*"]
+
+#============================== X-Pack Monitoring ===============================
+# metricbeat can export internal metrics to a central Elasticsearch monitoring
+# cluster.  This requires xpack monitoring to be enabled in Elasticsearch.  The
+# reporting is disabled by default.
+
+# Set to true to enable the monitoring reporter.
+#monitoring.enabled: false
+
+# Sets the UUID of the Elasticsearch cluster under which monitoring data for this
+# Metricbeat instance will appear in the Stack Monitoring UI. If output.elasticsearch
+# is enabled, the UUID is derived from the Elasticsearch cluster referenced by output.elasticsearch.
+#monitoring.cluster_uuid:
+
+# Uncomment to send the metrics to Elasticsearch. Most settings from the
+# Elasticsearch output are accepted here as well.
+# Note that the settings should point to your Elasticsearch *monitoring* cluster.
+# Any setting that is not set is automatically inherited from the Elasticsearch
+# output configuration, so if you have the Elasticsearch output configured such
+# that it is pointing to your Elasticsearch monitoring cluster, you can simply
+# uncomment the following line.
+#monitoring.elasticsearch:
+
+#================================= Migration ==================================
+
+# This allows to enable 6.7 migration aliases
+#migration.6_to_7.enabled: true
+
