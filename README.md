@@ -122,4 +122,4 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to http://104.45.228.107:5601/app/kibana to check that the installation worked as expected.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-Use command: ansible-playbok [name of nano .yml file]
+$ ansible-playbok /etc/ansible/install-elk.yml
