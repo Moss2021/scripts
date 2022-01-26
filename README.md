@@ -108,11 +108,6 @@ These Beats allow us to collect the following information from each machine:
 
 - Metricbeat: helps monitor your servers by collecting metrics data from the operating system and services running on the server such as Apache.
 
-E.g., Topbeat: helps monitor servers by collecting: 
-System wide statistics (CPU usage, memory usage, etc)
-Per-process statistics (process name, process pid, process state, etc)
-File system statistics (list of available disks, etc)
-
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
@@ -121,5 +116,17 @@ SSH into the control node and follow the steps below:
 - Update the host file to include web servers and elk server ip addresses
 - Run the playbook, and navigate to http://104.45.228.107:5601/app/kibana to check that the installation worked as expected.
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+Answer the following questions to fill in the blanks:
+
+- Which file is the playbook?
+install-elk.yml
+
+- Where do you copy it? /etc/ansible/
+
+- Which file do you update to make Ansible run the playbook on a specific machine? /etc/ansible/hosts
+
+- How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+In the host file, I specified the server group and IPs I want to update and run the playbook
+
+- As a Bonus, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 $ ansible-playbok /etc/ansible/install-elk.yml
