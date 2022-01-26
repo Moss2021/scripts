@@ -34,7 +34,7 @@ Load balancing ensures that the application will be highly efficient, in additio
 Mitigates DoS attacks, load balancers help protect the availability of resources by ensuring that no single server has to handle too much traffic. 
 
 - What is the advantage of a jump box?
-The advantage of a jump box is to give access to admins to a secure computer to connect to before conducting any administrative tasks/assignments
+The advantage of a jump box is to give access to admins to a secure computer to connect to before conducting any administrative tasks/assignments.
 Jump box provides a gateway to access other machines on a private network using SSH protocol.
 
 
